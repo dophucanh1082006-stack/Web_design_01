@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+
+h4 { font-size: 20px; color: #222; }
+
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+body {
+  width: 100%;
+}
+
+/* Header Start*/
+#header {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background : #e3e6fe;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    z-index: 999;
+    position:sticky;
+    top:0;
+    left:0;
+}
+#navbar { display:flex; align-items: center; justify-content: center; }
+
+/* Đã chỉnh sửa phần gạch chân cho Navbar ở đây */
+#navbar li { 
+    list-style:none; 
+    padding: 0 20px; 
+    /* Đã xóa position: relative ở thẻ li */
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color:#1a1a1a; 
+    transition: 0.3s ease;
+    position: relative; /* Thêm position relative vào thẻ a để neo gạch chân */
+}
+
+#navbar li a:hover,
+#navbar li a.active { 
+    color: #088178; 
+}
+
+/* Hiệu ứng gạch chân mượt mà bám chuẩn 100% chữ */
+#navbar li a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    width:100%
+}
+/* Kết thúc phần chỉnh sửa Navbar */
+
+#page-header {
+    background-image: url("img/banner/b2.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+#page-header h2, #page-header p { color: #fff; }
+
+/* Cart Page */
+#cart {
+    overflow-x: auto;
+}
+
+#cart table {
+    width:100%;
+    border-collapse:collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#cart table img {
+    width:70px;
+}
+
+#cart table td:nth-child(1) {
+    width:100px;
+    text-align: center;
+}
+#cart table td:nth-child(2) {
+    width:150px;
+    text-align: center;
+}
+#cart table td:nth-child(3) {
+    width:250px;
+    text-align: center;
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6) {
+    width:150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(5) input {
+    border: 1px solid #e9e1e4;
+    text-align: center;
+    border-radius: 50px;
+    width:70px;
+    padding: 10px 5px 10px 15px;
+}
+ 
+#cart table thead {
+    border: 1px solid #e9e1e4;
+    border-left: none;
+    border-right: none;
+}
+
+#cart table thead td {
+    font-weight: 700;
+    text-transform:uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+
+#cart table tbody tr td {
+    padding-top: 15px;
+
+}
+#cart table tbody td {
+    font-size: 13px;
+}
+
+#cart-add{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#coupon {
+    width:50%;
+    margin-bottom: 30px;
+}
+
+#coupon h3,
+#subtotal h3 {
+    padding-bottom: 15px;
+}
+
+#coupon input {
+    padding: 10px 20px;
+    outline:none;
+    width:60%;
+    margin-right: 10px;
+    border: 1px solid #6C63FF;
+}
+
+#subtotal {
+    width:50%;
+    margin-bottom: 30px;
+    border: 1px solid #6C63FF;
+    padding: 30px;
+}
+
+#subtotal table {
+    border-collapse: collapse;
+    width:100%;
+    margin-bottom: 20px;
+}
+
+#subtotal table td {
+    width:50%;
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    font-size: 13px;
+}
+button.normal {
+    background-color: #6C63FF; 
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px; 
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.4s all ease;
+}
+
+button.normal:hover {
+    background-color: #FF4C29; /* Màu khi di chuột vào */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+
+/* FOOTER */
+.section-p1 { padding: 40px 80px; }
+footer { display: flex; flex-wrap: wrap; justify-content: space-between; }
+footer .col { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 20px; }
+footer .logo { margin-bottom: 30px; }
+footer h4 { font-size: 14px; padding-bottom: 20px; }
+footer p { font-size: 13px; margin: 0 0 8px 0; }
+footer a { font-size: 13px; text-decoration: none; color: #222; margin-bottom: 10px; }
+footer .follow { margin-top: 20px; }
+footer .follow i { color: #465b52; padding-right: 4px; cursor: pointer; }
+footer .install .row img { border: 1px solid #088178; border-radius: 6px; }
+footer .install img { margin: 10px 0 15px 0; }
+footer .follow i:hover, footer a:hover { color: #088178; }
+footer .copyright { width: 100%; text-align: center; }
+
+
+@media (max-width: 477px) {
+    #cart table thead {
+        display: none; /* Ẩn tiêu đề bảng */
+    }
+
+    #cart table tbody tr {
+        display: flex;
+        flex-direction: column; /* Biến mỗi hàng thành một cột đứng */
+        padding: 20px;
+        border: 1px solid #eee;
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    #cart table td {
+        width: 100% !important; /* Chiếm hết chiều ngang */
+        text-align: left !important;
+        padding: 5px 0;
+    }
+
+    #cart table td:nth-child(1) {
+        position: absolute; /* Đưa nút X vào góc trên cùng */
+        top: 10px;
+        right: 10px;
+        width: auto !important;
+    }
+    
+    #cart table img {
+        width: 100px; /* Ảnh to hơn cho dễ nhìn trên di động */
+    }
+}
+
+@media (max-width: 477px) {
+    #cart-add {
+        flex-direction: column; /* Xếp chồng Coupon lên trên Subtotal */
+    }
+
+    #coupon, #subtotal {
+        width: 100%; /* Cả hai chiếm hết chiều ngang màn hình */
+        padding: 20px;
+    }
+    
+    #header {
+        padding: 20px; /* Thu nhỏ padding của Header để dành chỗ cho Logo */
+    }
+}
