@@ -6,25 +6,34 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Ecommerce clothes website</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">         
 
         <link rel="stylesheet" href="contact.css">
     </head>
 
     <body>
         <section id="header">
-             <a href="#"><img src="img/logo.png" class="logo "></a>
-             <div>
-                <ul id="navbar">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="shop.html">Shop</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a class="active" href="contact.html">Contact</a></li>
-                    <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>  
-                </ul>
-             </div>
-        </section>
+    <a href="#"><img style="height: 80px" src="logo.png" class="logo"></a>
+    <div>
+        <ul id="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop_page1.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+            <!-- Giỏ hàng trên máy tính -->
+            <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            <!-- Nút đóng menu trên mobile -->
+            <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+        </ul>
+    </div>
+    
+    <!-- KHỐI MOBILE MỚI THÊM VÀO -->
+    <div id="mobile">
+        <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+        <i id="bar" class="fa-solid fa-bars"></i>
+    </div>
+</section>
 
         <section id="hero">
             <h2>#let's talk</h2>
@@ -37,20 +46,21 @@
                 <h2>Visit one of our agency locations or contact us today</h2>
                 <h3>Head Office</h3>
                 <div>
-                    <li>
-                        <i class = "fal fa-map"></i>
+                    <li >
+                        
+                        <i class="fa-solid fa-location-dot"></i>
                         <p>207 Đ. Giải Phóng, Đồng Tâm, Bạch Mai, Hà Nội, Việt Nam</p>
                     </li>
                     <li>
-                        <i class = "fal fa-envelope"></i>
+                        <i class="fa-solid fa-envelope"></i>
                         <p>cara@gmail.com</p>
                     </li>
                     <li>
-                        <i class = "fal fa-phone-alt"></i>
+                        <i class="fa-solid fa-phone"></i>
                         <p>+01 2222 365 / (+91) 01 2345 6789</p>
                     </li>
                     <li>
-                        <i class = "fal fa-clock"></i>
+                        <i class="fa-solid fa-clock"></i>
                         <p>Monday to Saturday: 9.00am to 17.pm</p>
                     </li>
                 </div>
@@ -90,7 +100,7 @@
 
     <footer class="section-p1">
         <div class="col">
-            <img class="logo" src="img/logo.png" alt="">
+            <img style="height: 80px" src="logo.png" class="logo ">
             <h4>Contact</h4>
             <p><strong>Address: </strong> 562 Wellington Road, Street 32, San Francisco</p>
             <p><strong>Phone: </strong> +01 2222 365 / (+91) 01 2345 6789</p>
@@ -125,24 +135,14 @@
             <a href="#">Help</a>
         </div>
 
-        <div class="col install">
-            <h4>Install App</h4>
-            <p>From App Store or Google Play</p>
-            <div class="row">
-                <img src="img/pay/app.jpg" alt="">
-                <img src="img/pay/play.jpg" alt="">
-            </div>
-            <p>Secured Payment Gateways</p>
-            <img src="img/pay/pay.png" alt="">
-        </div>
-
+        
         <div class="copyright">
             <p>© 2021, Tech2 etc - HTML CSS Ecommerce Template</p>
         </div>
     </footer>
     
 
-
+<script src="https://kit.fontawesome.com/fad6c80be4.js" crossorigin="anonymous"></script>
         <script src="script.js"></script>
     </body>
 
