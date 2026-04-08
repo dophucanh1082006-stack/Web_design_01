@@ -50,25 +50,25 @@
                     <td><a href="#"><i class="far fa-times-circle"></i></a></td>
                     <td><img src="img/products/f1.jpg" ></td>
                     <td>Cartoon Astronaut T-Shirts</td>
-                    <td>$118.19</td>
-                    <td><input type="number" value="1" min="0"></td>
-                    <td>$118.19</td>
+                    <td class="price">$118.19</td>
+                    <td><input type="number" value="1" min="0" class="quanty"></td>
+                    <td class="total">$118.19</td>
                 </tr>
                 <tr>
                     <td><a href="#"><i class="far fa-times-circle"></i></a></td>
                     <td><img src="img/products/f2.jpg" ></td>
                     <td>Cartoon Vietnam T-Shirts</td>
-                    <td>99.99</td>
-                    <td><input type="number" value="1"></td>
-                    <td>$99.99</td>
+                    <td class="price">99.99</td>
+                    <td><input type="number" value="1" min="0" class="quanty"></td>
+                    <td class="total">$99.99</td>
                 </tr>
                 <tr>
                     <td><a href="#"><i class="far fa-times-circle"></i></a></td>
                     <td><img src="img/products/f3.jpg" ></td>
                     <td>Luis Vuiton T-Shirts</td>
-                    <td>$1000</td>
-                    <td><input type="number" value="1"></td>
-                    <td>$1000</td>
+                    <td class="price">$1000</td>
+                    <td><input type="number" value="1" min="0" class="quanty"></td>
+                    <td class="total">$1000</td>
                 </tr>
             </tbody>
         </table>
@@ -79,8 +79,8 @@
         <div id="coupon">
             <h3>Apply coupon for customers</h3>
             <div>
-                <input type="text" placeholder="Enter Your Coupon">
-                <button class="normal">Apply</button>
+                <input id="gigia" type="text" placeholder="VD: VN1234">
+                <button class="normal" onclick="applyCoupon()">Apply</button>
             </div>
         </div>
         <div id="subtotal">
@@ -99,7 +99,7 @@
                     <td>$330</td>
                 </tr>
             </table>
-            <button class="normal">Proceed to checkout</button>
+            <button class="normal" onclick="checkout()">Proceed to checkout</button>
         </div>
     </section>
 
