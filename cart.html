@@ -14,18 +14,29 @@
 
     <body>
     <section id="header">
-      <a href="index.html" ><img style="height: 80px" src="logo.png" class="logo "></a>
-    
-      <div>
+    <a href="index.html"><img style="height: 80px" src="logo.png" class="logo"></a>
+    <div>
         <ul id="navbar">
             <li><a href="index.html">Home</a></li>
             <li><a href="shop_page1.html">Shop</a></li>
+            
             <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a class="active" href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            <li><a  href="contact.html">Contact</a></li>
+            <!-- Giỏ hàng trên máy tính -->
+            <li id="lg-bag"><a href="cart.html" class="active"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            <!-- Nút đóng menu trên mobile -->
+            <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
         </ul>
-      </div>
-    </section>
+    </div>
+    
+    <!-- KHỐI MOBILE MỚI THÊM VÀO -->
+    <div id="mobile">
+        <a  href="cart.html" ><i class="fa-solid fa-bag-shopping"></i></a>
+        <i id="bar" class="fa-solid fa-bars"></i>
+    </div>
+</section>
+
+</nav>
 
     <section id="page-header">
               <h2>Shop smarter, shop here</h2>
@@ -48,7 +59,7 @@
                 <tr>
                     <td><a href="#"><i class="far fa-times-circle"></i></a></td>
                     <td><img src="img/products/f1.jpg" ></td>
-                    <td>T-Shirts 1</td>
+                    <td>Cartoon Astronaut T-Shirts</td>
                     <td class="price">$118.19</td>
                     <td><input type="number" value="1" min="0" class="quanty"></td>
                     <td class="total">$118.19</td>
@@ -56,7 +67,7 @@
                 <tr>
                     <td><a href="#"><i class="far fa-times-circle"></i></a></td>
                     <td><img src="img/products/f2.jpg" ></td>
-                    <td>T-Shirts 2</td>
+                    <td>Cartoon Vietnam T-Shirts</td>
                     <td class="price">99.99</td>
                     <td><input type="number" value="1" min="0" class="quanty"></td>
                     <td class="total">$99.99</td>
@@ -64,7 +75,7 @@
                 <tr>
                     <td><a href="#"><i class="far fa-times-circle"></i></a></td>
                     <td><img src="img/products/f3.jpg" ></td>
-                    <td>T-Shirts 3</td>
+                    <td>Luis Vuiton T-Shirts</td>
                     <td class="price">$1000</td>
                     <td><input type="number" value="1" min="0" class="quanty"></td>
                     <td class="total">$1000</td>
@@ -106,7 +117,7 @@
         <div class="col">
             <img style="height: 80px" src="logo.png" class="logo ">
             <h4>Contact</h4>
-            <p><strong>Address: </strong> 207 Giai phong Street, Bach Mai Ward, Ha Noi</p>
+            <p><strong>Address: </strong> 207 đường Giải Phóng, phường Bạch Mai , Hà Nội , Việt Nam</p>
             <p><strong>Phone: </strong> +01 2222 365 / (+84) 01 2345 6789</p>
             <p><strong>Hours: </strong> 10:00 - 18:00, Mon - Sat</p>
             <div class="follow">
@@ -143,7 +154,7 @@
             <p>©2026 Nhóm 7 Thiết Kế Web</p>
         </div>
     </footer>
-       
+       <script src="script.js"></script>
     <script src="cart.js"></script>
     
 

@@ -236,50 +236,88 @@ footer .install img { margin: 10px 0 15px 0; }
 footer .follow i:hover, footer a:hover { color: #088178; }
 footer .copyright { width: 100%; text-align: center; }
 
-
-@media (max-width: 477px) {
-    #cart table thead {
-        display: none; /* Ẩn tiêu đề bảng */
-    }
-
-    #cart table tbody tr {
-        display: flex;
-        flex-direction: column; /* Biến mỗi hàng thành một cột đứng */
-        padding: 20px;
-        border: 1px solid #eee;
-        margin-bottom: 20px;
-        position: relative;
-    }
-
-    #cart table td {
-        width: 100% !important; /* Chiếm hết chiều ngang */
-        text-align: left !important;
-        padding: 5px 0;
-    }
-
-    #cart table td:nth-child(1) {
-        position: absolute; /* Đưa nút X vào góc trên cùng */
-        top: 10px;
-        right: 10px;
-        width: auto !important;
-    }
-    
-    #cart table img {
-        width: 100px; /* Ảnh to hơn cho dễ nhìn trên di động */
-    }
+#mobile {
+    display: none;
+    align-items: center;
 }
 
-@media (max-width: 477px) {
-    #cart-add {
-        flex-direction: column; /* Xếp chồng Coupon lên trên Subtotal */
-    }
-
-    #coupon, #subtotal {
-        width: 100%; /* Cả hai chiếm hết chiều ngang màn hình */
-        padding: 20px;
-    }
+#close {
+    display: none;
+}
+@media (max-width: 799px) {
+    .section-p1 { padding: 40px 40px; }
     
-    #header {
-        padding: 20px; /* Thu nhỏ padding của Header để dành chỗ cho Logo */
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
     }
+    #navbar.active { right: 0px; }
+    #navbar li { margin-bottom: 25px; }
+    
+    #mobile { display: flex; align-items: center; }
+    #mobile i { color: #1a1a1a; font-size: 24px; padding-left: 20px; cursor: pointer;}
+    #close { display: initial; position: absolute; top: 30px; left: 30px; color: #222; font-size: 24px; }
+    #lg-bag { display: none; }
+    
+    #hero { height: 70vh; padding: 0 80px; background-position: top 30% right 30%; }
+    #feature { justify-content: center; }
+    #feature .fe-box { margin: 15px 15px; }
+    #product1 .pro-container { justify-content: center; }
+    #product1 .pro { margin: 15px; }
+    #banner { height: 20vh; }
+    #sm-banner .banner-box { min-width: 100%; height: 30vh; }
+    #banner3 { padding: 0 40px; }
+    #banner3 .banner-box { width: 28%; }
+    #newsletter .form { width: 70%; }
+    
+    #page-header { height: 30vh; padding: 14px; }
+}
+
+/* =========================================
+   THIẾT BỊ MOBILE (ĐIỆN THOẠI) - Dưới 477px
+========================================= */
+@media (max-width: 477px) {
+    .section-p1 { padding: 20px; }
+    #header { padding: 10px 30px; }
+    
+    #hero { padding: 0 20px; background-position: 55%; }
+    #hero h1 { font-size: 38px; }
+    #hero h2 { font-size: 32px; }
+    
+    #feature { justify-content: space-between; }
+    #feature .fe-box { width: 155px; margin: 0 0 15px 0; }
+    
+    #product1 .pro { width: 100%; }
+    
+    #banner { height: 40vh; }
+    #sm-banner .banner-box { height: 40vh; }
+    #sm-banner .banner-box2 { margin-top: 20px; }
+    #banner3 { padding: 0 20px; }
+    #banner3 .banner-box { width: 100%; }
+    
+    #newsletter { padding: 40px 20px; }
+    #newsletter .form { width: 100%; margin-top: 20px;}
+    
+    footer .col { width: 100%; }
+    footer .copyright { text-align: start; }
+    
+    #page-header { height: 25vh; }
+    #page-header h2 { font-size: 28px; }
+    #page-header p { font-size: 14px; }
+    
+    /* Single Product Mobile */
+    #prodetails { flex-direction: column; }
+    #prodetails .single-pro-image { width: 100%; margin-right: 0px; }
+    #prodetails .single-pro-details { width: 100%; }
 }
