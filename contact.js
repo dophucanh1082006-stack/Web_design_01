@@ -17,14 +17,7 @@ form.addEventListener("submit", function(event) {
         username.setCustomValidity("Tên người dùng phải có ít nhất 5 ký tự.");
     }
 
-    // 4. Kiểm tra logic Email (Đúng định dạng và không trống)
-    if (email.validity.valueMissing) {
-        email.setCustomValidity("Vui lòng nhập Email.");
-    } else if (email.validity.typeMismatch) {
-        email.setCustomValidity("Email không đúng định dạng");
-    }
-
-    // 5. Kiểm tra và hiển thị bong bóng lỗi
+    // 4. Kiểm tra và hiển thị bong bóng lỗi
     if (!form.checkValidity()) {
         event.preventDefault(); // Ngăn gửi form
         form.reportValidity();  // Hiện lỗi tại ô sai đầu tiên
