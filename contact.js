@@ -16,11 +16,11 @@ form.addEventListener("submit", function(event) {
     if (username.value.trim().length < 5) {
         username.setCustomValidity("Tên người dùng phải có ít nhất 5 ký tự.");
     }
-
+   
     // 4. Kiểm tra và hiển thị bong bóng lỗi
     if (!form.checkValidity()) {
         event.preventDefault(); // Ngăn gửi form
-        form.reportValidity();  // Hiện lỗi tại ô sai đầu tiên
+        form.reportValidity(); 
         return; 
     }
 
@@ -34,6 +34,14 @@ form.addEventListener("submit", function(event) {
     };
     const jsonData = JSON.stringify(user);
     localStorage.setItem("message", jsonData);
-    alert("Gửi thành công!\n" + jsonData);
+    const savedata = localStorage.getItem("message");
+     if(savedata) {
+        const oser = JSON.parse(savedata);
+        alert("Gửi thành công\n" +
+            "Tên của bạn là: " + oser.name +
+            "\nEmail là: " + oser.email +
+            "\nLĩnh vực của bạn là: " + oser.subject +
+            "\nLời nhắn của bạn: " + oser.message);
+    }
     form.reset();
 });
