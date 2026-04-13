@@ -17,11 +17,11 @@
     <a href="index.html"><img style="height: 80px" src="logo.png" class="logo"></a>
     <div>
         <ul id="navbar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="shop_page1.html">Shop</a></li>
+            <li><a href="index.html">Trang Chủ</a></li>
+            <li><a href="shop_page1.html">Cửa Hàng</a></li>
             
-            <li><a href="about.html">About</a></li>
-            <li><a  href="contact.html">Contact</a></li>
+            <li><a href="about.html">Giới Thiệu</a></li>
+            <li><a  href="contact.html">Liên Hệ</a></li>
             <!-- Giỏ hàng trên máy tính -->
             <li id="lg-bag"><a href="cart.html" class="active"><i class="fa-solid fa-bag-shopping"></i></a></li>
             <!-- Nút đóng menu trên mobile -->
@@ -47,12 +47,12 @@
         <table width="100%">
             <thead>
                 <tr>
-                    <td>Remove</td>
-                    <td>Image</td>
-                    <td>Product</td>
-                    <td>Price</td>
-                    <td>Quantity</td>
-                    <td>Subtotal</td>
+                    <td>xóa khỏi giỏ</td>
+                    <td>minh họa</td>
+                    <td>sản phẩm</td>
+                    <td>giá</td>
+                    <td>số lượng</td>
+                    <td>tổng</td>
                 </tr>
             </thead>
             <tbody>
@@ -60,25 +60,25 @@
                     <td><a href="#"><i class="far fa-times-circle"></i></a></td>
                     <td><img src="img/products/f1.jpg" ></td>
                     <td>T-Shirts 1</td>
-                    <td class="price">$118.19</td>
+                    <td class="price">118000đ</td>
                     <td><input type="number" value="1" min="0" class="quanty"></td>
-                    <td class="total">$118.19</td>
+                    <td class="total">118000đ</td>
                 </tr>
                 <tr>
                     <td><a href="#"><i class="far fa-times-circle"></i></a></td>
                     <td><img src="img/products/f2.jpg" ></td>
                     <td>T-Shirts 2</td>
-                    <td class="price">99.99</td>
+                    <td class="price">99000đ</td>
                     <td><input type="number" value="1" min="0" class="quanty"></td>
-                    <td class="total">$99.99</td>
+                    <td class="total">99000đ</td>
                 </tr>
                 <tr>
                     <td><a href="#"><i class="far fa-times-circle"></i></a></td>
                     <td><img src="img/products/f3.jpg" ></td>
                     <td>T-Shirts 3</td>
-                    <td class="price">$1000</td>
+                    <td class="price">1000000đ</td>
                     <td><input type="number" value="1" min="0" class="quanty"></td>
-                    <td class="total">$1000</td>
+                    <td class="total">1000000đ</td>
                 </tr>
             </tbody>
         </table>
@@ -87,29 +87,29 @@
     
     <section id="cart-add" class="section-p1">
         <div id="coupon">
-            <h3>Apply coupon for customers</h3>
+            <h3>Áp Dụng Mã Khuyến Mãi</h3>
             <div>
                 <input id="gigia" type="text" placeholder="VD: VN1234">
-                <button class="normal" onclick="applyCoupon()">Apply</button>
+                <button class="normal" onclick="applyCoupon()">Áp Dụng</button>
             </div>
         </div>
         <div id="subtotal">
-            <h3>Cart Totals</h3>
+            <h3>Giỏ hàng của bạn</h3>
             <table>
                 <tr>
-                    <td>Cart Subtotal</td>
-                    <td>$330</td>
+                    <td>Tổng giỏ hàng</td>
+                    <td>0đ</td>
                 </tr>
                 <tr>
                     <td>Shipping</td>
                     <td>Free</td>
                 </tr>
                 <tr>
-                    <td>Total</td>
-                    <td>$330</td>
+                    <td>Thành tiền</td>
+                    <td>0đ</td>
                 </tr>
             </table>
-            <button class="normal" onclick="checkout()">Proceed to checkout</button>
+            <button class="normal" onclick="checkout()">Tiến hành thanh toán</button>
         </div>
     </section>
 
