@@ -19,7 +19,7 @@ Cách sử dụng và hiểu website cho mọi người:
 ======== Giới thiệu ========
 Tại đây, khách hàng có thể biết rõ hơn về cửa hàng: "Cửa hàng là ai; cửa hàng mang lại lợi ích gì cho khách hàng"
 
-======== Liên lạc ========
+======== Liên hệ ========
 - Tại đây, khách hàng có thể biết được địa chỉ,email , số điện thoại, giờ làm việc của cửa hàng
 - Ngoài ra trang web còn nhúng địa chỉ của cửa hàng để khách hàng có thể dễ dàng tìm nhờ google map
 - Tại trang này, khách hàng có thể gửi form để lại tin nhắn cho cửa hàng được biết để cửa hàng có thể cải thiện chất lượng dịch vụ
@@ -27,5 +27,14 @@ Tại đây, khách hàng có thể biết rõ hơn về cửa hàng: "Cửa hà
 + Tên nhập vào phải có ít nhất 5 chữ
 + Địa chỉ email phải đúng định dạng
 - Sau khi gửi form, trang web sẽ hiện cửa sổ thông báo: "Gửi thành công" kèm theo thông tin mà người dùng đã nhập.
+
+======== Giỏ hàng ========
+- Tại đây, khách hàng có thể lựa chọn sản phẩm mình muốn mua cũng như thấy được giá tiền của sản phẩm
+- Bằng cách thay đổi số lượng sản phẩm khách hàng có thể biết được số tiền mà mình cần bỏ ra
+- Tại bảng "Giỏ hàng của bạn" khách hàng có thể thấy được tổng tiền mà mình cần thanh toán 
+- Khi nhấn ô "Tiến hành thanh toán", trang web sẽ hiện ra 1 cửa sổ ghi: "Tổng tiền của bạn là: ...đ"
+- Ngoài ra khi người dùng nhập mã thanh toán và nhấn nút "Áp dụng", trang web sẽ hiện ra một cửa sổ ghi:"Bạn được giảm giá 30%"
+- Sau khi nhấn nút OK ở cửa sổ, số tiền trong bảng giỏ hàng sẽ được giảm 30%.
+**Lưu ý: Mã thanh toán bắt buộc phải có hai ký tự: "VN"  
 
 
