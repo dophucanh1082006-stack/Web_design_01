@@ -17,7 +17,7 @@ Cách sử dụng và hiểu website cho mọi người:
 - Ngoài ra người dùng có thể thay đổi ảnh sản phẩm bằng cách nhấn vào những ảnh bên dưới
 
 ======== Giới thiệu ========
--Tại đây, khách hàng có thể biết rõ hơn về cửa hàng: "Cửa hàng là ai; cửa hàng mang lại lợi ích gì cho khách hàng"
+- Tại đây, khách hàng có thể biết rõ hơn về cửa hàng: "Cửa hàng là ai; cửa hàng mang lại lợi ích gì cho khách hàng"
 
 ======== Liên hệ ========
 - Tại đây, khách hàng có thể biết được địa chỉ,email , số điện thoại, giờ làm việc của cửa hàng
