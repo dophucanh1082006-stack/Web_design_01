@@ -28,6 +28,7 @@ Cách sử dụng và hiểu website cho mọi người:
 + Tên nhập vào phải có ít nhất 5 chữ
 + Địa chỉ email phải đúng định dạng
 - Sau khi gửi form, trang web sẽ hiện cửa sổ thông báo: "Gửi thành công" kèm theo thông tin mà người dùng đã nhập.
+- Sau khi gửi form, form sẽ được reset lại.
 
 ======== Giỏ hàng ========
 - Tại đây, khách hàng có thể lựa chọn sản phẩm mình muốn mua cũng như thấy được giá tiền của sản phẩm
@@ -36,6 +37,11 @@ Cách sử dụng và hiểu website cho mọi người:
 - Khi nhấn ô "Tiến hành thanh toán", trang web sẽ hiện ra 1 cửa sổ ghi: "Tổng tiền của bạn là: ...đ"
 - Ngoài ra khi người dùng nhập mã thanh toán và nhấn nút "Áp dụng", trang web sẽ hiện ra một cửa sổ ghi:"Bạn được giảm giá 30%"
 - Sau khi nhấn nút OK ở cửa sổ, số tiền trong bảng giỏ hàng sẽ được giảm 30%.
-**Lưu ý: Mã thanh toán bắt buộc phải có hai ký tự: "VN"  
+**Lưu ý: Mã thanh toán bắt buộc phải có hai ký tự: "VN"
+
+======== Đối với màn hình điện thoại ========
+- Thanh điều hướng sẽ được thu gọn, chỉ hiện ra biểu tượng giỏ hàng
+- Để di chuyển đến trang khác thì, người dùng cần nhấn vaod biểu tượng ba dấu gạch ngang
+- Để đóng thanh điều hướng thì nhấn vào biểu tượng dấu X
 
 
