@@ -15,6 +15,7 @@ Cách sử dụng và hiểu website cho mọi người:
 - Khách hàng có thể di chuyển đến trang trước và sau nhờ thanh điều hướng bên dưới
 - Tại sản phẩm đầu tiên ở mỗi trang người dùng có thể nhấn vào ảnh để xem minh họa chi tiết sản phẩm
 - Ngoài ra người dùng có thể thay đổi ảnh sản phẩm bằng cách nhấn vào những ảnh bên dưới
+- Cuối cùng, khách hàng có thể thay đổi số lượng cũng như size của sản phẩm
 
 ======== Giới thiệu ========
 - Tại đây, khách hàng có thể biết rõ hơn về cửa hàng: "Cửa hàng là ai; cửa hàng mang lại lợi ích gì cho khách hàng"
