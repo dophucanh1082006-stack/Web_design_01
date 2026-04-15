@@ -21,8 +21,8 @@ function updateCart() {
 
 // Hàm này chuyên trách việc đưa con số lên giao diện HTML
 function renderTotal() {
-    document.querySelector("#subtotal table tr:nth-child(1) td:last-child").innerText = cartTotal+"đ";
-    document.querySelector("#subtotal table tr:nth-child(3) td:last-child").innerText = cartTotal+"đ";
+    document.querySelector("#subtotal table tr:nth-child(1) td:last-child").innerText = cartTotal.toFixed(0)+"đ";
+    document.querySelector("#subtotal table tr:nth-child(3) td:last-child").innerText = cartTotal.toFixed(0)+"đ";
 }
 
 function applyCoupon() { // Đổi tên hàm để tránh trùng với tên biến // Lấy đúng thẻ input
