@@ -20,7 +20,7 @@ Trang chủ (index.html)──── Thương hiệu(logo, khía cạnh dặc bi
 ├─── Giới Thiệu (about.html)
 │    ├─── Câu chuyện thương hiệu
 │    ├─── Hướng dẫn cài đặt App (Giả lập)
-│    └─── Các đặc điểm nổi bật (Feature)
+│    └─── Các đặc điểm nổi bật 
 │
 ├─── Liên Hệ (contact.html)
 │    ├─── Thông tin chi nhánh + Google Map
