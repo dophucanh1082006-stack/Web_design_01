@@ -46,30 +46,3 @@ function checkout() {
 for (let i = 0; i < quantities.length; i++) {
     quantities[i].addEventListener("input", updateCart);
 }
-function addToCartDirect(imgId, nameId, priceId) {
-                const image = document.getElementById(imgId).src;
-                const name = document.getElementById(nameId).innerText;
-                const price = document.getElementById(priceId).innerText;
-                const size = "Default"; // Trang chủ không chọn được size, đặt mặc định
-                const qty = 1; // Nhấn vào icon ngoài trang chủ thì mặc định thêm 1 cái
-
-                const productItem = {
-                    name: name,
-                    price: price,
-                    size: size,
-                    quantity: qty,
-                    image: image
-                };
-
-                let cart = JSON.parse(localStorage.getItem('cart')) || [];
-                const existingProductIndex = cart.findIndex(item => item.name === name && item.size === size);
-
-                if (existingProductIndex !== -1) {
-                    cart[existingProductIndex].quantity += qty;
-                } else {
-                    cart.push(productItem);
-                }
-
-                localStorage.setItem('cart', JSON.stringify(cart));
-                alert('Đã thêm 1 sản phẩm ' + name + ' vào giỏ hàng!');
-            }
