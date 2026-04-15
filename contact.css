@@ -217,7 +217,7 @@ button.white:hover {
     display: flex;
     justify-content: space-between;
     margin: 30px;
-    padding: 80px;
+    padding: 50px;
     border: 1px solid #e1e1e1; 
 }
 
@@ -334,6 +334,11 @@ footer .copyright { width: 100%; text-align: center; }
     #newsletter .form { width: 70%; }
     
     #page-header { height: 30vh; padding: 14px; }
+
+    #form-details{
+        margin: 20px; 
+        padding: 20px; 
+    }
 }
 
 /* =========================================
@@ -372,4 +377,22 @@ footer .copyright { width: 100%; text-align: center; }
     #prodetails { flex-direction: column; }
     #prodetails .single-pro-image { width: 100%; margin-right: 0px; }
     #prodetails .single-pro-details { width: 100%; }
+
+    #contact-details{
+        flex-direction: column; 
+    }
+    #contact-details .details{
+        width: 100%;
+        margin-bottom: 30px ; /* Thêm khoảng cách giữa phần chi tiết và bản đồ khi xếp chồng */
+    }
+    #contact-details .map {
+        width: 100%;
+    }
+    #form-details{
+        flex-wrap: wrap; 
+    }
+    #form-details form {
+        width: 100%;
+        margin-bottom: 50px; 
+    }
 }
