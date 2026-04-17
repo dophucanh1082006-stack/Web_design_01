@@ -1,55 +1,66 @@
-* { 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
 }
-
-html { 
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 /* Global Styles */
+h1 { font-size: 50px; line-height: 64px; color: #222; }
+h2 { font-size: 46px; line-height: 54px; color: #222; }
+h4 { font-size: 20px; color: #222; }
+h6 { font-weight: 700; font-size: 12px; }
+p { font-size: 16px; color: #465b52; margin: 15px 0 20px 0; }
+/* ====================================
+   ĐỊNH DẠNG NÚT BẤM (BUTTONS)
+==================================== */
 
-h1 {
-    font-size: 50px;
-    line-height: 64px;
-    color: #222;
+/* 1. Nút tiêu chuẩn (Màu xanh chủ đạo) - Dành cho Explore More, Add to Cart... */
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #fff;
+    background-color: #088178;
+    border-radius: 4px; /* Bo góc nhẹ cho hiện đại */
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease; /* Hiệu ứng chuyển màu mượt mà */
 }
 
-h2 {
-    font-size: 46px;
-    line-height: 54px;
-    color: #222;
+button.normal:hover {
+    background-color: #06665f; /* Đổi màu xanh đậm hơn khi rê chuột */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Thêm bóng đổ nhẹ cho nổi bật */
 }
 
-h4 {
-    font-size: 20px;
-    color: #222;
+/* 2. Nút nền trong suốt viền trắng - Dành riêng cho các Banner ảnh */
+button.white {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    outline: none;
+    transition: all 0.3s ease;
 }
 
-h6 {
-    font-weight: 700;
-    font-size: 12px;
+button.white:hover {
+    background-color: #088178; /* Đổ nền xanh khi đưa chuột vào */
+    border: 1px solid #088178; /* Đổi màu viền tiệp với màu nền */
+    color: #fff;
 }
 
-p {
-    font-size: 16px;
-    color: #465b52;
-    margin: 15px 0 20px 0;
-}
-
-.section-p1 {
-    padding: 40px 80px;
-}
-
-.section-m1 {
-    margin: 40px 0;
-}
-
-body {
-    width: 100%;
-}
+.section-p1 { padding: 40px 80px; }
+.section-m1 { margin: 40px 0; }
+body { width: 100%; }
 
 /* Header Start*/
 #header {
@@ -64,12 +75,13 @@ body {
     top:0;
     left:0;
 }
-
 #navbar { display:flex; align-items: center; justify-content: center; }
 
+/* Đã chỉnh sửa phần gạch chân cho Navbar ở đây */
 #navbar li { 
     list-style:none; 
     padding: 0 20px; 
+    /* Đã xóa position: relative ở thẻ li */
 }
 
 #navbar li a {
@@ -78,7 +90,7 @@ body {
     font-weight: 600;
     color:#1a1a1a; 
     transition: 0.3s ease;
-    position: relative; 
+    position: relative; /* Thêm position relative vào thẻ a để neo gạch chân */
 }
 
 #navbar li a:hover,
@@ -86,6 +98,7 @@ body {
     color: #088178; 
 }
 
+/* Hiệu ứng gạch chân mượt mà bám chuẩn 100% chữ */
 #navbar li a::after {
     content: "";
     width: 0;
@@ -142,64 +155,19 @@ body {
 #about-head div {
     padding-left: 40px; 
 }
-
-/*-----------------DOWNLOAD APP--------------------*/
 #about-app{
-    display: flex;
-    align-items: center; 
-    justify-content: space-between;
-    gap: 30px;
+    text-align: center; 
 }
-#about-app .download{
-    flex: 50%;
-    justify-self: center;
-    margin: auto; 
+#about-app .video{
+    width: 70%;
+    height: 100%; 
+    margin: 30px auto 0 auto ; 
+
 }
-#about-app .download h2{
-    margin-bottom: 30px;
-    text-align: center;
-}
-#about-app .phone{
-    display: flex;
-    flex: 50%;
-    justify-content: center;
-}
-#about-app .phone img{
-    width: 100%;
+#about-app .video video{ 
+    width: 100%; 
     height: 100%;
-}
-
-#about-app .store-buttons{
-    display: grid;
-    margin: 30px auto;
-    align-items: center;
-    background: #000; 
-    color: #fff;
-    border-radius: 18px;
-    width: 320px;
-    padding: 14px 24px;
-    text-decoration: none; /* Loại bỏ gạch chân */
-    grid-template-columns: auto auto; /* Hai cột: một cho icon, một cho text */
-}
-#about-app .store-buttons i{
-    grid-row: 1 / span 2; /* Icon chiếm cả hai hàng */
-    color: #fff;
-    font-size: 30px;
-    margin: auto; 
-}
-
-#about-app .small{
-    font-size: 13px; 
-    opacity: 0.8; /* Tạo hiệu ứng mờ cho dòng nhỏ */ 
-    letter-spacing: 0.5px;
-}
-#about-app .big { 
-    font-size: 24px; 
-    font-weight: 600; 
-    letter-spacing: 0.3px; /* Tạo khoảng cách giữa các chữ cái */ 
-}
-.store-buttons:hover { 
-    transform: scale(1.03); /* Hiệu ứng phóng to khi hover */ 
+    border-radius: 20px; 
 }
 
 /*------------ Feature-------------------------- */ 
@@ -374,7 +342,7 @@ footer .copyright { width: 100%; text-align: center; }
         left: 30px;
         color: #222;
         font-size: 24px;
-        cursor: pointer; /* Thêm hiệu ứng hover cho nút đóng menu */
+        cursor: pointer;
     }
 
     #close:hover {
@@ -416,27 +384,17 @@ footer .copyright { width: 100%; text-align: center; }
         width: 70%; 
         margin-top: 20px;
     }
-    /*download app*/
-    #about-app{
-        gap: 20px;
-        padding: 40px;
-    }
-
-    #about-app .store-buttons{
-        width: 260px;
-        padding: 12px 16px;
-        margin: 20px 0;
-    }
+    
 }
 
 /* =========================================
    THIẾT BỊ MOBILE (ĐIỆN THOẠI) - Dưới 477px
 ========================================= */
-@media (max-width: 477px) { 
+@media (max-width: 477px) {
     .section-p1 { padding: 20px; }
     #header { padding: 10px 30px; }
     #head { padding: 0 20px; background-position: 55%; }
-    #head h2 { font-size: 30px; }
+    #head h2 { font-size: 32px; }
     
     #feature { justify-content: space-between; }
     #feature .fe-box { width: 155px; margin: 0 0 15px 0; }
@@ -468,23 +426,8 @@ footer .copyright { width: 100%; text-align: center; }
     #about-head div{
         padding-left: 0px;
     }
-    #about-head h2{
-        font-size: 40px;
-        text-align: center;
-    }
-
-    /*about app*/ 
-    #about-app{
-        flex-direction: column;
-        gap: 20px;
-    }
-     #about-app .store-buttons{
-        width: 260px;
-        padding: 12px 16px;
-        margin: 20px auto;
-    }
-    #about-app .download h2{
-        font-size: 40px;
+    #about-app .video{
+        width: 100%;
     }
 
 }

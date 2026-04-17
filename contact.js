@@ -40,7 +40,7 @@ form.addEventListener("submit", function(event) {
         alert("Gửi thành công\n" +
             "Tên của bạn là: " + oser.name +
             "\nEmail là: " + oser.email +
-            "\nTiêu đề của bạn là: " + oser.subject +
+            "\nLĩnh vực của bạn là: " + oser.subject +
             "\nLời nhắn của bạn: " + oser.message);
     }
     form.reset();

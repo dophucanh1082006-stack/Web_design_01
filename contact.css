@@ -1,55 +1,67 @@
-* { 
+
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Spartan", sans-serif;
 }
-
-html { 
+html {
   scroll-behavior: smooth;
 }
 
 /* Global Styles */
+h1 { font-size: 50px; line-height: 64px; color: #222; }
+h2 { font-size: 46px; line-height: 54px; color: #222; }
+h4 { font-size: 20px; color: #222; }
+h6 { font-weight: 700; font-size: 12px; }
+p { font-size: 16px; color: #465b52; margin: 15px 0 20px 0; }
+/* ====================================
+   ĐỊNH DẠNG NÚT BẤM (BUTTONS)
+==================================== */
 
-h1 {
-  font-size: 50px;
-  line-height: 64px;
-  color: #222;
+/* 1. Nút tiêu chuẩn (Màu xanh chủ đạo) - Dành cho Explore More, Add to Cart... */
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #fff;
+    background-color: #088178;
+    border-radius: 4px; /* Bo góc nhẹ cho hiện đại */
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease; /* Hiệu ứng chuyển màu mượt mà */
 }
 
-h2 {
-  font-size: 46px;
-  line-height: 54px;
-  color: #222;
+button.normal:hover {
+    background-color: #06665f; /* Đổi màu xanh đậm hơn khi rê chuột */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Thêm bóng đổ nhẹ cho nổi bật */
 }
 
-h4 {
-  font-size: 20px;
-  color: #222;
+/* 2. Nút nền trong suốt viền trắng - Dành riêng cho các Banner ảnh */
+button.white {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    outline: none;
+    transition: all 0.3s ease;
 }
 
-h6 {
-  font-weight: 700;
-  font-size: 12px;
+button.white:hover {
+    background-color: #088178; /* Đổ nền xanh khi đưa chuột vào */
+    border: 1px solid #088178; /* Đổi màu viền tiệp với màu nền */
+    color: #fff;
 }
 
-p {
-  font-size: 16px;
-  color: #465b52;
-  margin: 15px 0 20px 0;
-}
-
-.section-p1 {
-  padding: 40px 80px;
-}
-
-.section-m1 {
-  margin: 40px 0;
-}
-
-body {
-  width: 100%;
-}
+.section-p1 { padding: 40px 80px; }
+.section-m1 { margin: 40px 0; }
+body { width: 100%; }
 
 /* Header Start*/
 #header {
@@ -64,8 +76,6 @@ body {
     top:0;
     left:0;
 }
-
-
 #navbar { display:flex; align-items: center; justify-content: center; }
 
 /* Đã chỉnh sửa phần gạch chân cho Navbar ở đây */
@@ -217,7 +227,7 @@ button.white:hover {
     display: flex;
     justify-content: space-between;
     margin: 30px;
-    padding: 50px;
+    padding: 80px;
     border: 1px solid #e1e1e1; 
 }
 
@@ -334,12 +344,8 @@ footer .copyright { width: 100%; text-align: center; }
     #newsletter .form { width: 70%; }
     
     #page-header { height: 30vh; padding: 14px; }
-
-    #form-details{
-        margin: 20px; 
-        padding: 20px; 
-    }
 }
+
 
 /* =========================================
    THIẾT BỊ MOBILE (ĐIỆN THOẠI) - Dưới 477px
@@ -377,22 +383,4 @@ footer .copyright { width: 100%; text-align: center; }
     #prodetails { flex-direction: column; }
     #prodetails .single-pro-image { width: 100%; margin-right: 0px; }
     #prodetails .single-pro-details { width: 100%; }
-
-    #contact-details{
-        flex-direction: column; 
-    }
-    #contact-details .details{
-        width: 100%;
-        margin-bottom: 30px ; /* Thêm khoảng cách giữa phần chi tiết và bản đồ khi xếp chồng */
-    }
-    #contact-details .map {
-        width: 100%;
-    }
-    #form-details{
-        flex-wrap: wrap; 
-    }
-    #form-details form {
-        width: 100%;
-        margin-bottom: 50px; 
-    }
 }
